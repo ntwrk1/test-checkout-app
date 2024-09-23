@@ -1,0 +1,33 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "ee5e07d08ebbb6de9e6172671f4ae4ab"
+name = "test-vanessa-app"
+handle = "test-vanessa-app"
+application_url = "https://settlement-subsequent-senegal-mas.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "ntwrk-platform.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products, write_discounts, write_discounts_allocator_functions, read_products"
+
+[auth]
+redirect_urls = [
+  "https://settlement-subsequent-senegal-mas.trycloudflare.com/auth/callback",
+  "https://settlement-subsequent-senegal-mas.trycloudflare.com/auth/shopify/callback",
+  "https://settlement-subsequent-senegal-mas.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks"
+
+[pos]
+embedded = false
