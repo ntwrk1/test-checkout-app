@@ -3,7 +3,7 @@
 client_id = "8f56fc1b4cf1458481367a1d03c0be67"
 name = "test-vanessa-app"
 handle = "test-vanessa-app-1"
-application_url = "https://brief-button-sh-investigations.trycloudflare.com"
+application_url = "https://fa-did-colleagues-victor.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = ""
 
 [auth]
 redirect_urls = [
-  "https://brief-button-sh-investigations.trycloudflare.com/auth/callback",
-  "https://brief-button-sh-investigations.trycloudflare.com/auth/shopify/callback",
-  "https://brief-button-sh-investigations.trycloudflare.com/api/auth/callback"
+  "https://fa-did-colleagues-victor.trycloudflare.com/auth/callback",
+  "https://fa-did-colleagues-victor.trycloudflare.com/auth/shopify/callback",
+  "https://fa-did-colleagues-victor.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
