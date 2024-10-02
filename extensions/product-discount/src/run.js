@@ -38,6 +38,8 @@ export function run(input) {
     return EMPTY_DISCOUNT;
   }
 
+  console.log("Targets", targets);
+
   return {
     discounts: [
       {

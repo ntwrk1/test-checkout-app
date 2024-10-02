@@ -3,7 +3,7 @@
 client_id = "8f56fc1b4cf1458481367a1d03c0be67"
 name = "test-vanessa-app"
 handle = "test-vanessa-app-1"
-application_url = "https://fa-did-colleagues-victor.trycloudflare.com"
+application_url = "https://mid-lawn-cartoons-vista.trycloudflare.com"
 embedded = true
 
 [build]
@@ -13,13 +13,13 @@ include_config_on_deploy = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = ""
+scopes = "read_products,write_discounts,write_discounts_allocator_functions,write_products"
 
 [auth]
 redirect_urls = [
-  "https://fa-did-colleagues-victor.trycloudflare.com/auth/callback",
-  "https://fa-did-colleagues-victor.trycloudflare.com/auth/shopify/callback",
-  "https://fa-did-colleagues-victor.trycloudflare.com/api/auth/callback"
+  "https://mid-lawn-cartoons-vista.trycloudflare.com/auth/callback",
+  "https://mid-lawn-cartoons-vista.trycloudflare.com/auth/shopify/callback",
+  "https://mid-lawn-cartoons-vista.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
