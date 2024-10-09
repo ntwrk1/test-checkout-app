@@ -10,6 +10,7 @@ import {
   useApplyAttributeChange,
   useInstructions,
   useTranslate,
+  useDiscountCodes,
   // useCheckoutToken,
   // useTotalAmount,
   // useTotalShippingAmount,
@@ -34,7 +35,7 @@ export default reactExtension(
 );
 
 function Extension() {
-  console.log('HEllO? from the checkout side?')
+  console.log('HEllO? trying again?')
   const translate = useTranslate();
   const { extension, sessionToken } = useApi();
   const instructions = useInstructions();
@@ -44,6 +45,7 @@ function Extension() {
   const modifyCartFn = useApplyCartLinesChange();
   const cartLines = useCartLines();
 
+  // console.log('discount--', useDiscountCodes());
   
 //   const options = {
 //   method: 'POST',
@@ -69,22 +71,24 @@ function Extension() {
   //   }
   //   getStuff();
   // });
+
+
   const options = {
-  method: 'POST',
-  headers: {
+    method: 'POST',
+    headers: {
     'X-Violet-App-Secret': '9b347f57631c4c76b65e9edcc693bd1c',
     'X-Violet-App-Id': '10928',
     'Content-Type': 'application/json',
     'Access-Control-Allow-Origin': '*',
   },
-  body: '{"username":"testUser","password":"password1"}'
 };
 
 
 
   useEffect(() => {
     async function getStuff() {
-      fetch('https://sandbox-api.violet.io/v1/login', options)
+      console.log('fetching');
+      fetch('https://177b-104-34-160-75.ngrok-free.app/api/estimate-cart', {headers: {'ngrok-skip-browser-warning': '123'}})
       .then(response => response.json())
       .then(response => console.log(response))
       .catch(err => console.error(err));

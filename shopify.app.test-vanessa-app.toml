@@ -3,7 +3,7 @@
 client_id = "8f56fc1b4cf1458481367a1d03c0be67"
 name = "test-vanessa-app"
 handle = "test-vanessa-app-1"
-application_url = "https://mid-lawn-cartoons-vista.trycloudflare.com"
+application_url = "https://slides-surprising-pleased-anthropology.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "read_products,write_discounts,write_discounts_allocator_functions,writ
 
 [auth]
 redirect_urls = [
-  "https://mid-lawn-cartoons-vista.trycloudflare.com/auth/callback",
-  "https://mid-lawn-cartoons-vista.trycloudflare.com/auth/shopify/callback",
-  "https://mid-lawn-cartoons-vista.trycloudflare.com/api/auth/callback"
+  "https://slides-surprising-pleased-anthropology.trycloudflare.com/auth/callback",
+  "https://slides-surprising-pleased-anthropology.trycloudflare.com/auth/shopify/callback",
+  "https://slides-surprising-pleased-anthropology.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
