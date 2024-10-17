@@ -72,6 +72,8 @@ function Extension() {
   //   getStuff();
   // });
 
+  console.log('cartLines', cartLines);
+
 
   const options = {
     method: 'POST',
@@ -82,8 +84,6 @@ function Extension() {
     'Access-Control-Allow-Origin': '*',
   },
 };
-
-
 
   useEffect(() => {
     async function getStuff() {
